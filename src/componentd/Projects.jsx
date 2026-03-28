@@ -12,8 +12,8 @@ const Projects = () => {
     const ctx = gsap.context(() => {
       gsap.from(".project-card", {
         opacity: 0,
-        y: 50, // thoda kam (smooth feel)
-        duration: 0.5, // ⚡ faster
+        scale:0.95, // thoda kam (smooth feel)
+        duration: 0.8, // ⚡ faster
         ease: "power2.out",
         stagger: 0.15, // ⚡ optimized
         scrollTrigger: {
