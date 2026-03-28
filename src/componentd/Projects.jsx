@@ -13,9 +13,10 @@ const Projects = () => {
       gsap.from(".project-card", {
         opacity: 0,
         scale:0.95, // thoda kam (smooth feel)
-        duration: 0.8, // ⚡ faster
+        duration: 0.8,
+        delay:0.4, // ⚡ faster
         ease: "power2.out",
-        stagger: 0.15, // ⚡ optimized
+        stagger: 0.3, // ⚡ optimized
         scrollTrigger: {
           trigger: projectsRef.current,
           start: "top 85%",
